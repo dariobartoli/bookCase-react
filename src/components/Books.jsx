@@ -6,7 +6,9 @@ export const Books = ({item}) => {
     <div>
         <Link to={`/view/${item.id}`} className='link__book'>
           <div className='card__container'>
-            <img src={item.cover} alt={item.title} className='image__index'/>
+            <figure className='figure'>
+              <img src={item.cover} alt={item.title} className='image__index'/>
+            </figure>
             <p className='link__title'>{item.title}</p>
           </div>
         </Link>

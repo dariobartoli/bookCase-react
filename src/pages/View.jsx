@@ -25,10 +25,12 @@ export const View = () => {
             <div className='view__container'>
               <h2>{item?.title}</h2>
               <div>{item?.cover? <img src={item.cover}/> : ''}</div>
-              <h4><span className='span__view'>Author: </span>{item?.author}</h4>
-              <h4><span className='span__view'>Introduction: </span>{item?.intro}</h4>
-              <h4><span className='span__view'>State: </span>{item?.completed? 'Readed' : 'In progress'}</h4>
-              <h4><span className='span__view'>Review: </span>{item?.review}</h4>
+              <div className='spanContainer'>
+                <h4><span className='span__view'>Author: </span>{item?.author}</h4>
+                <h4><span className='span__view'>Introduction: </span>{item?.intro}</h4>
+                <h4><span className='span__view'>State: </span>{item?.completed? 'Readed' : 'In progress'}</h4>
+                <h4><span className='span__view'>Review: </span>{item?.review}</h4>
+              </div>
             </div>
           </div>
         </div>
